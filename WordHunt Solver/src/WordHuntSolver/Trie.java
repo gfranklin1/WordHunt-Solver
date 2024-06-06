@@ -11,32 +11,32 @@ public class Trie {
     }
 
     public void insert(String word) {
-        Node node = root;
+        Node curr = root;
         for (char ch : word.toCharArray()) {
-            node.children.putIfAbsent(ch, new Node());
-            node = node.children.get(ch);
+            curr.children.putIfAbsent(ch, new Node());
+            curr = curr.children.get(ch);
         }
-        node.isWord = true;
+        curr.isWord = true;
     }
 
     public boolean search(String word) {
-        Node node = root;
+        Node curr = root;
         for (char ch : word.toCharArray()) {
-            if (!node.children.containsKey(ch)) {
+            if (!curr.children.containsKey(ch)) {
                 return false;
             }
-            node = node.children.get(ch);
+            curr = curr.children.get(ch);
         }
-        return node.isWord;
+        return curr.isWord;
     }
 
     public boolean startsWith(String prefix) {
-        Node node = root;
+        Node curr = root;
         for (char ch : prefix.toCharArray()) {
-            if (!node.children.containsKey(ch)) {
+            if (!curr.children.containsKey(ch)) {
                 return false;
             }
-            node = node.children.get(ch);
+            curr = curr.children.get(ch);
         }
         return true;
     }
@@ -52,5 +52,3 @@ public class Trie {
         }
     }
 }
-
-
