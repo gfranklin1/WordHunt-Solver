@@ -8,7 +8,7 @@ Word Hunt Solver is a Java-based application designed to solve word hunt puzzles
 - **Efficient Word Search**: Uses a Trie data structure to quickly find valid words.
 - **Customizable Word List**: Easily update the word list by modifying the `wordlist.txt` file.
 - **Top 100 Longest Words**: Outputs the top 100 longest words found in the grid, however this can be easily changed in the `Main.java` file.
-- **Console-Based Interface**: Simple CLI interface for easy use.
+- **Console-Based Interface**: Simple CLI for easy use.
 
 ## Getting Started
 
