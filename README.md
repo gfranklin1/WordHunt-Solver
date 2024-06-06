@@ -44,24 +44,32 @@ Word Hunt Solver is a Java-based application designed to solve word hunt puzzles
 2. **View the results**:
     - The application will print the top 100 longest words found in the grid.
 
+3. **Continue or Quit**:
+    - After viewing the results, you can choose to enter another grid by providing a new set of letters. If you wish to quit, simply type 'q' when prompted for the grid letters.
+
 ### Example
 
 ```diff
-Enter letters for the grid:
+Enter letters for the grid (type 'q' to quit):
 > oatrihpshtnrenei
 
 4x4 Board:
-o a t r 
-i h p s 
-h t n r 
-e n e i 
+O A T R 
+I H P S 
+H T N R 
+E N E I 
 
 Top 100 longest words:
 TENNERS
 PTERINS
 HENNERS
 HAPTENS
-...
+STAITHE
+... (continued)
+
+Enter letters for the grid (type 'q' to quit):
+> q
+Quitting...
 ```
 
 ### Customizing the Word List
